@@ -1,24 +1,47 @@
 import React from "react";
-import ReactTyped from "react-typed";
+import Typed from "react-typed";
+// react typed animations packages
 const Banner = () => {
     return(
-        <div className="flex  w-full p-4 text-white ">
-                <div className="i" >
-                    <h1 className="text-3xl">Learn remotely with I.COURSE</h1> 
-                    <h2> Fast and flexible schudle for </h2>
-                    <p>
+        <div className="container md:flex  w-full p-8 text-white bg-[#fafafa] ">
+                <div className="i p-4 text-black " >
+                    <h1 className="text-5xl mb-5 font-bold text-[#00df9a]">
+                        <Typed 
+                            strings= {['Learn remotely with I.COURSE']}
+                            typeSpeed={40} // Adjust the typing speed in milliseconds
+                            backSpeed={20} // Adjust the backspace speed in milliseconds
+
+                        />  
+                    </h1>
+                    <div className="md:flex">
+                    <h2 className=" mb-4 md:mb-5 md:text-3xl"> Fast and flexible schedule for 
+                    <Typed className="text-2xl mx-2 md:text-3xl" 
+                        strings = {['Student', 'Business', 'Employee']}
+                        typeSpeed={40} // Adjust the typing speed in milliseconds
+                        backSpeed={20} // Adjust the backspace speed in milliseconds
+                     />
+                     </h2> 
+                    <Typed className=" hidden text-2xl mx-2 md:text-3xl" 
+                    strings = {['Student', 'Business', 'Employee']} 
+                    
+                    />
+                    </div>
+                    
+                    <p className="mb-5 md:w-[70%] ">
                         Get your team in sync, no matter your location Streamline processes. Get acess to more
                         than 500+ courses.
                     </p>
+                    <span className="bg-[#00df9a] p-3 rounded "> Learn More</span>
+                    <div className="mt-5 icon-logo "></div>
                 </div>
                 
-                <div className="bg-[url('/image/learning.png')] p-24 w-full">
-
-
+                <div className="hidden md:block bg"> 
+                    
                 </div>
                 
 
         </div>
+
     )
 };
 
