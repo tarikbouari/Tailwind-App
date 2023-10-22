@@ -16,17 +16,17 @@ const Navbar = () => {
 
     return (
         // nav container
-        <div className="text-white flex justify-between mx-w-[1024px] h-24 mx-auto px-4 items-center">
+        <div className=" container text-white flex justify-between mx-w-[1024px] bg-[#fafafa] h-24 mx-auto px-4 items-center">
         
          {/* desktop  menu */}
         <h1 className="text-3xl font-bold text-[#00df9a]">I.COURSE </h1>
         {/* desktop navigation is hidden */}
-        <ul className=" hidden md:flex">
+        <ul className=" hidden md:flex justify-center items-center text-black">
             <li className="p-4">About us</li>
             <li className="p-4">Work</li>
             <li className="p-4">Contact</li>
             <li className="p-4">Home</li>
-            <li className="p-4">Get Started</li>
+            <li className=" rounded p-2 bg-[#00df9a] ">Get Started</li>
         </ul>
 
         {/* mobile device menu */}
@@ -36,7 +36,7 @@ const Navbar = () => {
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} /> }
         </div>
             {/* we use a conditional rendering to display the navigation list when the menu icon is clicked*/ }
-         <div className= { !nav ? "fixed left-0 top-0 w-[40%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500" : 'fixed left-[-100%]' }>
+         <div className= { !nav ? "fixed left-0 top-0 w-[40%] h-full border-r-gray-900 bg-[#fafafa] ease-in-out duration-500" : 'fixed left-[-100%]' }>
          
             <h1 className= " text-3xl font-bold text-[#00df9a] m-4">REACT. </h1>
             <ul className="uppercase">
