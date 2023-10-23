@@ -13,6 +13,10 @@ body {
   font-size:larger ;
 }
 
+p {
+  font-size: large;
+}
+
 .bg {
     background-image: url('./images/el.jpg');
     padding: 20rem 5rem;
