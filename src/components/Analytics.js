@@ -3,7 +3,7 @@ import scree from '../images/data.jpg'
 
 const Analytic = () => {
     return (
-        <div className="container grid md:grid-cols-2 p-4">
+        <div className="container grid md:grid-cols-2 p-8">
             <img src={scree}  className=" md:w-[400px] w-[350px] mx-auto py-2 " alt="analytic screen"  />
             <div className="md:flex flex-col justify-center">
                 <h4 className=" text-[#00df9a] " > DATA ANALYTICS COURSE </h4>

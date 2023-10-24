@@ -31,15 +31,15 @@ const Navbar = () => {
 
         {/* mobile device menu */}
         {/* md in tailwind css is equivalent to min-width(above 768):768px */}
-        <div onClick={handleNav} className="block md:hidden ">
+        <div onClick={handleNav} className="block md:hidden text-black">
             
             {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} /> }
         </div>
             {/* we use a conditional rendering to display the navigation list when the menu icon is clicked*/ }
-         <div className= { !nav ? "fixed left-0 top-0 w-[40%] h-full border-r-gray-900 bg-[#fafafa] ease-in-out duration-500" : 'fixed left-[-100%]' }>
+         <div className= { !nav ? "  fixed left-0 top-0 w-[50%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500" : 'fixed left-[-100%]' }>
          
-            <h1 className= " text-3xl font-bold text-[#00df9a] m-4">REACT. </h1>
-            <ul className="uppercase">
+            <h1 className= " text-3xl font-bold text-[#00df9a] m-4">I.COURSE </h1>
+            <ul className="uppercase px-0">
                 <li className="p-4 border-b border-gray-100">Home</li>
                 <li className="p-4 border-b border-gray-100">About us</li>
                 <li className="p-4 border-b border-gray-100">Work</li>
