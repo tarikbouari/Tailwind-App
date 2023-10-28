@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
 body {
   background-color: #fafafa !important;
-  font-size:larger ;
+  font-size: larger;
 }
 
 p {
@@ -18,18 +17,18 @@ p {
 }
 
 .bg {
-    background-image: url('./images/el.jpg');
-    padding: 20rem 5rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-  }
+  background-image: url('./images/el.jpg');
+  padding: 20rem 5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
 
-  .icon-logo {
-    background-image: url('./images/logos.jpg');;
-    padding: 4rem 0rem ;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.icon-logo {
+  background-image: url('./images/logos.jpg');
+  padding: 4rem 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
