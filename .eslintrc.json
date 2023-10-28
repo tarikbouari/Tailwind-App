@@ -12,6 +12,11 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "extends": [ "plugin:react/recommended", "plugin:react-hooks/recommended"],
     "plugins": ["react"],
     "rules": {
