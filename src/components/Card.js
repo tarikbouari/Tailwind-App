@@ -21,7 +21,7 @@ const Card = () => {
                 <div className="  shadow-xl bg-[#d3d7d7] py-8 text-center py-[7rem] rounded-lg hover:scale-105 duration-300 ">
                     <img src={double} alt="" className=" w-[100px] mx-auto mt-[-10rem]" />
                     <h2 className=" text-2xl md: text-3xl py-3" > Single user</h2>
-                    <p className="md:text-4xl font-bold "> 350$</p>
+                    <p className="md:text-4xl font-bold "> 150$</p>
                     <div className="pt-3 px-4">
                         <p className="border-b border-gray-200 " > 1T storage</p>
                         <p className="border-b border-gray-200 ">  5 Users Allowed</p>
@@ -32,7 +32,7 @@ const Card = () => {
                 <div className="  shadow-xl py-8 text-center py-[7rem] rounded-lg hover:scale-105 duration-300 ">
                     <img src={triple} alt="" className=" w-[100px] mx-auto mt-[-10rem]" />
                     <h2 className=" text-2xl md: text-3xl py-3" > Single user</h2>
-                    <p className="md:text-4xl font-bold "> 600$</p>
+                    <p className="md:text-4xl font-bold "> 150$</p>
                     <div className="pt-3 px-4">
                         <p className="border-b border-gray-200 " > 5T storage</p>
                         <p className="border-b border-gray-200 "> 20 Users Allowed</p>
