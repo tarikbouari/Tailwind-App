@@ -5,6 +5,7 @@ import Navbar from './components/Nav';
 import Band from './components/Band';
 import Newsletter from './components/Newsletter';
 import Card from './components/Card';
+import Review from './components/Reviews';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Band />
       <Analytic />
       <Card />
+      <Review />
       <Newsletter />
      
     </div>
