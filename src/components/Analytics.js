@@ -15,12 +15,8 @@ const Analytic = () => (
         ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Duis aute irure dolor in reprehenderit in voluptate .
       </p>
-      <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Click me
-      </button>
+      <button type="button" className=" p-[0.7rem] rounded bg-[#00df9a] text-black md:self-start ">Get started </button>
     </div>
   </div>
-
 );
-
 export default Analytic;

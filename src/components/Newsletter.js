@@ -37,10 +37,8 @@ const Newsletter = () => {
             <button type="submit" className=" rounded bg-[#00df9a] px-2  md:px-3 py-2"> Notify me</button>
           </form>
 
-          <div>
-            <h3 className="text-white text-lg font-bold">Subscribe to our Newsletter</h3>
-            <p className="text-white text-sm">Stay up to date with our latest news and products</p>
-            <p className="w-full">
+          <div className="pt-2">
+            <p className="w-full text-white">
               we care about the protection of your data. read our
               <a href="www.google.com" className="text-[#00df9a]"> privacy policy</a>
             </p>
