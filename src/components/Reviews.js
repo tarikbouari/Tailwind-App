@@ -1,6 +1,7 @@
 import React from "react";
 import arr from './DataReview'
 import { useState } from "react";
+import {RxDotFilled} from "react-icons/rx";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
  
 
@@ -24,30 +25,16 @@ const Review = () => {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
             
-    }
+    };
+
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+    };
 
     return (
         <div className="w-full bg-[#f7f9fa] px-4 py-16 relative "> 
-        {/* {arr.map( item => (
-            <div key= {item.id} className=" mx-auto grid grid-cols-2 bg-white border  py-6 px-4 w-[50%] rounded">
-                <div className="flex flex-col items-center justify-center ">
-                    <h2 className="text-4xl">&ldquo;</h2>
-                    <p>{item.text}</p>
-                </div>
-                <div className="flex flex-col p-4 ">
-                <img src={item.photo} alt=" profile picture" className="rounded-full w-[100px] h-[100px] mx-auto " />
-                    <div className=" flex flex-col items-center ">
-                        <h4 className=""> {item.nom}</h4>
-                        <p className="mb-0  text-[#00df9a] " > {item.profession} </p>
-                        <p className=" "> {item.city} </p>
-                    </div>
-                   
-                </div>
-            </div> 
-        ))} */}
-
         {
-         <div key= {arr[currentIndex].id} className=" mx-auto md:grid grid-cols-2 bg-white border  py-6 px-4 md:w-[50%] rounded">
+         <div key= {arr[currentIndex].id} className=" mx-auto md:grid grid-cols-2 bg-white border  py-6 px-4 md:w-[50%] rounded duration-600">
          <div className="flex flex-col items-center justify-center ">
              <h2 className="text-4xl">&ldquo;</h2>
              <p>{arr[currentIndex].text}</p>
@@ -70,6 +57,17 @@ const Review = () => {
         </div>
         <div onClick={nextSlide} className="absolute top-[50%] translate-x-0 translate-y-[50%]  md:right-[20rem] cusor-pointer" >
             <BsFillArrowRightCircleFill size={30}  />
+        </div>
+        <div className=" flex text-2xl justify-center py-2">
+            {arr.map( (slide, slideIndex) => (
+                <div key= {slideIndex}
+                 onClick={() => goToSlide(slideIndex)}
+                >
+                     <RxDotFilled />
+                </div>
+                
+            ))}
+           
         </div>
        
         </div>

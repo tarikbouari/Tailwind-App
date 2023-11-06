@@ -6,6 +6,8 @@ import Band from './components/Band';
 import Newsletter from './components/Newsletter';
 import Card from './components/Card';
 import Review from './components/Reviews';
+import Instructor from './components/Instructor';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
       <Analytic />
       <Card />
       <Review />
+      <Instructor />
       <Newsletter />
+      <Band />
+      <Footer />
      
     </div>
   );
